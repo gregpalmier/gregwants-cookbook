@@ -17,3 +17,7 @@ end
 package "sysv-rc-conf" do
   action :install
 end
+
+package "dnsutils" do
+  action :install
+end
