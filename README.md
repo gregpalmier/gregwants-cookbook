@@ -17,6 +17,7 @@ Usage
 =====
 
 Add the cookbook to your runlist.
+
 ``
-knife node run_list add recipe[gregwants-cookbook]
+knife node run_list add <node name> recipe[gregwants-cookbook]
 ``
