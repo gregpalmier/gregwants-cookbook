@@ -6,3 +6,14 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+package "htop" do
+  action :install
+end
+
+package "tree" do
+  action :install
+end
+
+package "sysv-rc-conf" do
+  action :install
+end
