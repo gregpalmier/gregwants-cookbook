@@ -21,3 +21,7 @@ end
 package "dnsutils" do
   action :install
 end
+
+package "apt-show-versions" do
+  action :install
+end
