@@ -6,6 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+package "elinks" do
+  action :install
+end
+
 package "htop" do
   action :install
 end
