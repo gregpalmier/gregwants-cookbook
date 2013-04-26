@@ -29,3 +29,7 @@ end
 package "apt-show-versions" do
   action :install
 end
+
+package "mailutils" do
+  action :install
+end
