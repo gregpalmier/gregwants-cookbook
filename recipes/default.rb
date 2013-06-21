@@ -6,30 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-package "elinks" do
-  action :install
-end
-
-package "htop" do
-  action :install
-end
-
-package "tree" do
-  action :install
-end
-
-package "sysv-rc-conf" do
-  action :install
-end
-
-package "dnsutils" do
-  action :install
-end
-
-package "apt-show-versions" do
-  action :install
-end
-
-package "mailutils" do
-  action :install
+%w{elinks htop tree sysv-rc-conf dnsutils apt-show-versions mailutils}.each do |pkg|
+  package pkg do
+    action :upgrade
+  end
 end
