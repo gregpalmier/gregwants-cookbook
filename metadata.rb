@@ -1,6 +1,7 @@
+<<<<<<< HEAD
 name             'gregwants'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'gregpalmier'
+maintainer_email 'gregpalmier@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures gregwants'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
