@@ -2,8 +2,8 @@
 # Cookbook Name:: gregwants
 # Recipe:: default
 #
-# Copyright (C) 2013 YOUR_NAME
-# 
+# Copyright (C) 2013 Greg Palmier
+#
 # All rights reserved - Redistribute
 #
 include_recipe 'apt'
