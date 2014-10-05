@@ -1,18 +1,18 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.configure("2") do |config|
+Vagrant.configure('2') do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
   # hostname setting is bugged in vagrant 1.2.7 atm
-  #config.vm.hostname = "gregwants-berkshelf"
+  # config.vm.hostname = "gregwants-berkshelf"
 
   config.omnibus.chef_version = :latest
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "squeeze64"
-  config.vm.box_url = "https://s3.amazonaws.com/wa.milton.aws.bucket01/sqeeze.box"
+  config.vm.box = 'squeeze64'
+  config.vm.box_url = 'https://s3.amazonaws.com/wa.milton.aws.bucket01/sqeeze.box'
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
   # via the IP. Host-only networks can talk to the host machine as well as
   # any other machines on the same network, but cannot be accessed (through this
   # network interface) by any external networks.
-  config.vm.network :private_network, ip: "10.33.33.88"
+  config.vm.network :private_network, :ip => '10.33.33.88'
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -53,12 +53,12 @@ Vagrant.configure("2") do |config|
   #
   # View the documentation for the provider you're using for more
   # information on available options.
-  #config.vm.boot_timeout = 120
+  # config.vm.boot_timeout = 120
   config.ssh.max_tries = 40
   config.ssh.timeout   = 120
 
   # The path to the Berksfile to use with Vagrant Berkshelf
-  config.berkshelf.berksfile_path = "./Berksfile"
+  config.berkshelf.berksfile_path = './Berksfile'
 
   # Enabling the Berkshelf plugin. To enable this globally, add this configuration
   # option to your ~/.vagrant.d/Vagrantfile file
@@ -81,7 +81,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[gregwants::default]"
+      'recipe[gregwants::default]'
     ]
   end
 end

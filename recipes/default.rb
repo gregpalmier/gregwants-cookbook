@@ -7,7 +7,7 @@
 # All rights reserved - Redistribute
 #
 include_recipe 'apt'
-%w{mytop elinks htop tree sysv-rc-conf dnsutils apt-show-versions mailutils}.each do |pkg|
+%w(mytop elinks htop tree sysv-rc-conf dnsutils apt-show-versions mailutils).each do |pkg|
   package pkg do
     action :upgrade
   end
