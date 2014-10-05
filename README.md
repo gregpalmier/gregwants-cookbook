@@ -1,6 +1,8 @@
 Description
 ===========
 
+[![Build Status](https://secure.travis-ci.org/gregpalmier/gregwants-cookbook.png)](http://travis-ci.org/gregpalmier/gregwants-cookbook)
+
 Random packages that really have no significant configuration associated with them.
 
 Requirements
